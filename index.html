@@ -7,15 +7,11 @@
   <title>JMG — Portfolio</title>
 
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://jmg.run.place/" />
+  <meta property="og:url" content="https://jmgstudios.github.io" />
   <meta property="og:title" content="JMG — Portfolio" />
   <meta
     property="og:description"
     content="Coder, AI enthusiast, PC modder and builder."
-  />
-  <meta
-    property="og:image"
-    content="pfp.png"
   />
 
   <style>
@@ -113,13 +109,6 @@
         font-display: swap;
     }
 
-    @font-face {
-        font-family: "Syne";
-        src: url("/static/fonts/Syne/static/Syne-Black.ttf") format("truetype");
-        font-weight: 900;
-        font-style: normal;
-        font-display: swap;
-    }
     :root {
       --black: #000000;
       --black-2: #060606;
@@ -909,6 +898,32 @@
       opacity: 0.7;
     }
 
+    .privacy-notice {
+      max-width: 620px;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .privacy-notice summary {
+      color: var(--purple);
+      cursor: pointer;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .privacy-notice p {
+      margin-top: 10px;
+      color: var(--grey-light);
+      font-size: 0.75rem;
+      line-height: 1.7;
+    }
+
+    .privacy-notice a {
+      color: var(--white);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
     /* =========================================================
        RESPONSIVE
        ========================================================= */
@@ -1510,6 +1525,17 @@
           <span>
             Built with a single shot AI prompt and subsequent changes
           </span>
+
+          <details class="privacy-notice">
+            <summary>Privacy</summary>
+            <p>
+              This site is hosted by GitHub Pages. GitHub logs and stores visitors’ IP addresses for security purposes, whether or not they are signed in. See the
+              <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection">GitHub Pages documentation</a>
+              and
+              <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.
+              Fonts are served locally by this site and are not requested from 3rd party servers.
+            </p>
+          </details>
 
         </div>
 
